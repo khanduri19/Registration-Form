@@ -1,72 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Page</title>
     <style>
-        body{background-color: lightskyblue;}
-        h1{background-color: red;
-            color: white;}
-        marquee{background-color: yellow;}    
+        body {
+            background-color: lightskyblue;
+        }
+
+        h1 {
+            background-color: red;
+            color: white;
+        }
+
+        marquee {
+            background-color: yellow;
+        }
     </style>
 </head>
+
 <body>
     <img src="MSI.jpg" height="100" width="100">
     <h1><b><u>Registration-Form</u></b></h1>
-    <form action="">
-        <label for="">Firstname:</label>
-        <input type="text" name="firstname" size="16"/>
-        <br><br>
-        <label for="">Middlename:</label>
-        <input type="text" name="middlename" size="16"/>
-        <br><br>
-        <label for="">Lastname:</label>
-        <input type="text" name="lastname" size="16"/>
-        <br><br>
-        <label for="">
-            Course:
-        </label>
-        <select name="" id="">
-            <option value="Course">course</option>
-            <option value="BCA">BCA</option>
-            <option value="BBA">BBA</option>
-            <option value="B.TECH">B.TECH</option>
-            <option value="MCA">MCA</option>
-            <option value="MBA">MBA</option>
-            <option value="M.TECH">M.TECH</option>
-            <option value="NONE">NONE</option>
-        </select>
-        <br><br>
-        <label for="">Gender:</label><br>
-        <input type="radio" name="male"/>Male <br>
-        <input type="radio" name="female"/>Female <br>
-        <input type="radio" name="other"/>Other <br>
-        <br><br>
-        <label for="">
-            Phone:
-        </label>
-        <input type="text" name="country code" value="+91" size="2"/>
-        <input type="text" name="phone" size="10"/>
-        <br><br>
-        Address
-        <br>
-        <textarea name="" id="" cols="80" rows="5" value="address">
+    <table>
+        <form action="">
+            <tr>
+                <th><label for="">Firstname:</label>
+            </tr>
+            <td><input type="text" name="firstname" size="16" /></th>
+                </tr>
+                <tr>
+                    <th></th><label for="">Middlename:</label>
+                </tr>
+            <td><input type="text" name="middlename" size="16" /></td>
+            </td>
+            <tr>
+                <th><label for="">Lastname:</label></th>
+                <td><input type="text" name="lastname" size="16" /></td>
+            </tr>
+            <tr>
+                <th><label for="">
+                        Course:
+                    </label></th>
+                <td><select name="" id="">
+                        <option value="Course">course</option>
+                        <option value="BCA">BCA</option>
+                        <option value="BBA">BBA</option>
+                        <option value="B.TECH">B.TECH</option>
+                        <option value="MCA">MCA</option>
+                        <option value="MBA">MBA</option>
+                        <option value="M.TECH">M.TECH</option>
+                        <option value="NONE">NONE</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <th><label for="">Gender:</label>
+            </tr>
+            <td><input type="radio" name="male" />Male
+                <input type="radio" name="female" />Female
+                <input type="radio" name="other" />Other
+            </td>
+            </tr>
+            <tr>
+                <th><label for="">
+                        Phone:
+                    </label></th>
+                <td><input type="text" name="country code" value="+91" size="2" />
+                    <input type="text" name="phone" size="10" />
+                </td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>
+                    <textarea name="" id="" cols="80" rows="5" value="address">
 
         </textarea>
-        <br><br>
-        Email:
-        <input type="email" id="email" name="email"/>
-        <br><br><br>
-        Re-type password:
-        <input type="Password" id="repass" name="repass">
-        <br><br>
-        <input type="button" value="Submit"/>
-        <br><br>
-        <marquee behavior="slide88" direction="right" >Register Now!!!</marquee>
+                </td>
+            </tr>
+            <tr>
+                <th> Email: </th>
+                <td><input type="email" id="email" name="email" /></td>
+            </tr>
+            <tr></tr>
+            <th>Re-type password:</th>
+            <td><input type="Password" id="repass" name="repass"></td>
+            </tr>
+            <tr> <input type="button" value="Submit" /></tr>
 
-    </form>
-    
+
+            <marquee behavior="slide88" direction="right">Register Now!!!</marquee>
+
+        </form>
+    </table>
+
 </body>
+
 </html>
